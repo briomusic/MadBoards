@@ -14,8 +14,6 @@
 
 import SwiftIO
 
-#if SWIFTIOBOARD
-
 public enum Id: Int32, IdName {
     public var value: Int32 {
         self.rawValue & Int32(0xFF)
@@ -44,5 +42,3 @@ public enum Id: Int32, IdName {
 
     case I2S0 = 0x0700
 }
-
-#endif
